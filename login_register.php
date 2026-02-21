@@ -9,8 +9,13 @@
         $checkEmail = $conn->query("SELECT email FROM users WHERE email = '$email' ");
         if( $checkEmail->num_rows > 0){
             $_SESSION['register_error'] = 'Email is already registered!';
+            $_SESSION['active_form'] = 'register';
         }else{
             $conn->query("INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password' )");
+            $_SESSION['name'] = $name;
+            $_SESSION['email'] = $email;
+            header("Location: user_page.php");
+            exit();
         }
         header("Location: index.php");
         exit();
@@ -25,10 +30,12 @@
         if (password_verify($password, $user['password'])) {
             $_SESSION['name'] = $user['name'];
             $_SESSION['email'] = $user['email'];
+            header("Location: user_page.php");
             exit();
         }
     }
     $_SESSION['login_error'] = 'Incorrect email or password';
+    $_SESSION['active_form'] = 'login';
     header("Location: index.php");
     exit();
     }   
