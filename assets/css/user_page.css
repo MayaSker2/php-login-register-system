@@ -32,13 +32,13 @@ body{
 }
 .box{
     height: 60vh;
-    width: 50%;
-    padding: 20px;
+    width: 30%;
+    padding: 15px;
     border-radius:10px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     background: var(--card-bg);
@@ -46,6 +46,9 @@ body{
 }
 .box h2{
     color: var(--text);
+}
+.box h2 span{
+    font-family: "Parisienne", cursive;
 }
 
 .box button{
@@ -61,15 +64,15 @@ body{
 }
 @media (max-width: 750px) {
     .box{
-        height: 40vh;
+        height: 30vh;
         width: 70%;
     }
     .box h2{
-       font-size: 19px;
+       font-size: 15px;
     }
     .box button{
         padding: 8px 13px;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 600;
         transition: 0.5s;
     }
