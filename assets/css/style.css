@@ -141,7 +141,7 @@ body{
 }
 .container .form-container  input{
     width: 100%;
-    padding: 8px;
+    padding: 9px;
     border-radius: 6px;
     border: none;
     outline: none;
@@ -235,8 +235,8 @@ body{
 }
 
 .container .switch-text a {
-    color: var(--link);
-    font-weight: 700;
+    color:  #554738 !important;
+    font-weight:800;
     margin-left: 5px;
 }
 
@@ -292,21 +292,28 @@ body{
         display: block;
     }
     .container .form-container .conact-list{
-        gap: 12px;
+        gap: 10px;
     }
     .container .form-container .conact-list .circle{
-        padding: 5px;
+        padding: 4px !important;
+        font-size: 12px;
     }
     .container .form-container p a{
         font-size: 12px;
     }
     .container .form-container  input{
         padding: 8px;
+        font-size: 10px;
     }
 
     .container .form-container  button{
         padding: 8px 16px;
         font-size: 12px;
     }
+    .container .switch-text {
+        color: var(--text);
+        font-size: 11px;
+    }
+
 
 }
