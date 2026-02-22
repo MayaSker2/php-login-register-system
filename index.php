@@ -23,7 +23,7 @@ function isActiveForm($formName, $activeForm) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login_Register</title>
-    <link rel="stylesheet" href="./assets/css/style.css?v=4">
+    <link rel="stylesheet" href="./assets/css/style.css?v=4.1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@ function isActiveForm($formName, $activeForm) {
                     <a href="#"> Or use your email address</a>
                 </p>
                 <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" id="password" name="password"  placeholder="Password" required>
                 <p>
                     <a href="forget-password.php">Forget password ?</a>
                 </p>
@@ -70,11 +70,11 @@ function isActiveForm($formName, $activeForm) {
                     <div class="circle"><i class="fa-brands fa-linkedin"></i></div>
                 </div>
                 <p>
-                <a href="#"> Or use your email address</a>
+                    <a href="#"> Or use your email address</a>
                 </p>
                 <input type="text" name="name" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" id="password" name="password"  placeholder="Password" required>
                 <button type="submit"  name="register">SIGN UP</button>
                 <p class="switch-text">
                     Already have an account? 
